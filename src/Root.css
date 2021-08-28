@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(/fonts/Inter-italic.latin.var.woff2) format('woff2');
+  font-named-instance: 'Italic';
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: -0.02em;
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* :root {
+  --primary: #747474;
+  --secondary: #e2e8f0;
+} */
+
+.darkmode {
+  --primary: #d8e2e2;
+  --secondary: #3f5650;
+}
+
+:root {
+  --primary: #3f5650;
+  --secondary: #e2e8f0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #c3c4ab;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
